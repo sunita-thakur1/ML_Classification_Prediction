@@ -12,7 +12,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 import os
 
-st.set_page_config(page_title="Recommendation Model Predictor", layout="centered")
+st.set_page_config(page_title="ML Classification Prediction", layout="centered")
 st.title("🔮 Recommendation Model Predictor")
 st.markdown("""
 Welcome to the **Recommendation Model Predictor**! This app helps predict the best recommendation model for users based on their preferences and behavior.

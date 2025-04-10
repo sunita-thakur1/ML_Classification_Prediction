@@ -111,7 +111,7 @@ with st.expander("📊 Show Feature Importances"):
 
 # --- Simulated Users ---
 st.header("🧪 Simulated Users")
-simulated_users = df[feature_columns].sample(2, random_state=42)
+simulated_users = df[feature_columns].copy()
 predicted_models = clf.predict(simulated_users)
 simulated_users["Recommended_Model"] = predicted_models
 
@@ -119,4 +119,4 @@ st.dataframe(simulated_users)
 
 # Optional: Download predictions
 csv = simulated_users.to_csv(index=False).encode('utf-8')
-st.download_button("📥 Download Simulated Results", csv, "simulated_predictions.csv", "text/csv")
+st.download_button("📥 Download All Predictions", csv, "all_predictions.csv", "text/csv")

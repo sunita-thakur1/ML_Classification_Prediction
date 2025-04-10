@@ -13,7 +13,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import os
 
 st.set_page_config(page_title="ML Classification Prediction", layout="centered")
-st.title("🔮 ML Classification Model Prediction")
+st.title("🔮 ML Classification Model Prediction")   
 st.markdown("""
 Welcome to the **Recommendation Model Predictor**! This app helps predict the best recommendation model for users based on their preferences and behavior.
 ### Key Features:
